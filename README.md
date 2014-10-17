@@ -4,7 +4,7 @@ OOP
 ***Интерфейс*** - Именованный набор сигнатур методов
 
 ``` C#
-public interface IShip
+	public interface IShip
 	{
 		string Move(int distance);
 		string Fight();
@@ -18,28 +18,28 @@ public interface IShip
 	
 	
 	public class TransportShip : IShip, IDestroybal
-{
-	public TransportShip()
 	{
+		public TransportShip()
+		{
+		}
+	
+		//реализация  сигнатуры из интерфейса  IShip
+		public string Move(int distance)
+		{
+			double time = (double)distance / 1000;
+			return string.Format("Пройдено километр: {0} за время: {1}", distance, time);
+		}
+		//реализация  сигнатуры из интерфейса  IShip
+		public string Fight()
+		{
+			return "Транспортный корабль не может вступать в бой!";
+		}
+		//реализация сигнатуры из интерфейса  IDestroybal
+		public string Destroy()
+		{
+			return "Корабль уничтожен";
+		}
 	}
-
-	//реализация  сигнатуры из интерфейса  IShip
-	public string Move(int distance)
-	{
-		double time = (double)distance / 1000;
-		return string.Format("Пройдено километр: {0} за время: {1}", distance, time);
-	}
-	//реализация  сигнатуры из интерфейса  IShip
-	public string Fight()
-	{
-		return "Транспортный корабль не может вступать в бой!";
-	}
-	//реализация сигнатуры из интерфейса  IDestroybal
-	public string Destroy()
-	{
-		return "Корабль уничтожен";
-	}
-}
 
 ```
 
@@ -47,7 +47,7 @@ public interface IShip
 - Есть некоторое сходство с abstract class. где также определяли методы, но в абстрактном классе есть модификаторы доступа и мы можем задавать тело методы. В интерефейсе же никакой реализации невозможно.
 
 
-Есть существенная разница между наследованием и реализацией интерфейса
+#### Есть существенная разница между наследованием и реализацией интерфейса
 
 1. При наследовании некоторый класс получает признаки родительского класса.
 2. При реализации инт.  инт всего лишь вооплощает методы
