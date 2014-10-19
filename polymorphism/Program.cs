@@ -20,6 +20,15 @@ namespace polymorphism
 				shape.Draw();
 			}
 
+            Fish fish = new Fish("yellow", 23, 500, true);
+            Bird bird = new Bird("Red", 123, 1400, false);
+
+            fish.GetCommonInfo();
+            fish.GetFishesInfo();
+
+            bird.GetCommonInfo();
+            bird.GetBirdsInfo();
+
 			Console.ReadKey();
 		}
 	}
@@ -67,4 +76,53 @@ namespace polymorphism
 			//base.Draw();
 		}
 	}
+
+    // базовый класс
+    class Animal
+    {
+        public string color;
+        public int size;
+        public int weidth;
+
+        public void GetCommonInfo()
+        {
+            Console.WriteLine("Животное: {0}\n Размер: {1}\n  Вес: {2}\n ", color, size, weidth);
+        }
+    }
+
+    class Fish : Animal
+    {
+        public bool canSweam;
+
+        public Fish(string color, int size, int weidth, bool canSweam)
+        {
+            this.color = color;
+            this.size = size;
+            this.weidth = weidth;
+            this.canSweam = canSweam;
+        }
+
+        public void GetFishesInfo ()
+        {
+            Console.WriteLine("Рыба умеет плавать: " + (this.canSweam==true ? "Да" : "Нет"));
+        }
+    }
+
+    class Bird : Animal
+    {
+        public bool canFly;
+        
+        public Bird(string color, int size, int weidth, bool canFly)
+        {
+            this.color = color;
+            this.size = size;
+            this.weidth = weidth;
+            this.canFly = canFly;
+        }
+
+        public void GetBirdsInfo ()
+        {
+            Console.WriteLine("Птица умеет летать: " + (this.canFly == true ? "Да" : "Нет"));
+        }
+    }
 }

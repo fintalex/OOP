@@ -4,3 +4,9 @@ c:\users\s.harchenko\documents\visual studio 2012\Projects\polymorphism\polymorp
 c:\users\s.harchenko\documents\visual studio 2012\Projects\polymorphism\polymorphism\bin\Debug\polymorphism.pdb
 c:\users\s.harchenko\documents\visual studio 2012\Projects\polymorphism\polymorphism\obj\Debug\polymorphism.exe
 c:\users\s.harchenko\documents\visual studio 2012\Projects\polymorphism\polymorphism\obj\Debug\polymorphism.pdb
+C:\Users\Алексей\Documents\GitHub\OOP\polymorphism\bin\Debug\polymorphism.exe.config
+C:\Users\Алексей\Documents\GitHub\OOP\polymorphism\obj\Debug\polymorphism.exe
+C:\Users\Алексей\Documents\GitHub\OOP\polymorphism\obj\Debug\polymorphism.pdb
+C:\Users\Алексей\Documents\GitHub\OOP\polymorphism\bin\Debug\polymorphism.exe
+C:\Users\Алексей\Documents\GitHub\OOP\polymorphism\bin\Debug\polymorphism.pdb
+C:\Users\Алексей\Documents\GitHub\OOP\polymorphism\obj\Debug\polymorphism.csprojResolveAssemblyReference.cache
