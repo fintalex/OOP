@@ -84,7 +84,25 @@
  Overiding and Overloading
 ===
 
-***Перегрузка*** (Overloading) - определение двух методов с одинаковым именем в пределах одного класса но имеющих разную сигнатуру.
+***Перегрузка*** (Overloading) - определение двух методов с одинаковым именем в пределах одного класса но имеющих разную сигнатуру. Простой пример сложения двух переменных с помощью метода Plus. Только в одном случае метод будет принимать два int значения, в другом два string значения. 
+
+```C#
+public static int Plus(int a, int b)
+    {
+        return a + b;
+    }
+    public static string Plus(string a, string b)
+    {
+        return a + b;
+    }
+
+    static void Main(String[] args)
+    {
+        Console.WriteLine(Plus(3, 7));
+        Console.WriteLine(Plus("3", "7"));
+        Console.ReadLine();
+    }
+```
 
 ***Переопределение*** (Overiding) - определение метода который определен в родительском классе. Метод имеет ту же  сигнатуру.
 
