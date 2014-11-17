@@ -86,7 +86,9 @@
 
 ---
  
- ###<a name='OveridingOverloading'>Overiding and Overloading</a>
+ ###<a name='OveridingOverloading'> Overiding and Overloading </a>
+ 
+ ===
 
 ***Перегрузка*** (Overloading) - определение двух методов с одинаковым именем в пределах одного класса но имеющих разную сигнатуру. Простой пример сложения двух переменных с помощью метода Plus. Только в одном случае метод будет принимать два int значения, в другом два string значения. 
 
