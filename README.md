@@ -138,6 +138,32 @@ public static int Plus(int a, int b)
 - Также надо помнить - невозможно использовать virtual в статическом свойстве
 - Переопределение виртуального мтеода в производном классе не обязательно в отличии от абстрактного мтеода.
 
+```C#
+public class Shape
+{ 
+	public virtual double GetS()
+	{
+		return 0;
+	}
+}
+public class Rectangular : Shape 
+{ 
+
+}
+public class Circle : Shape
+{
+	public double R;
+
+	public Circle(double r) {
+		R = r;
+	}
+
+	public override double GetS()
+	{
+		return 3.14 * this.R * this.R;
+	}
+	}
+```
 
 --- 
 
