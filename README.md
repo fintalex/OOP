@@ -1,8 +1,8 @@
 1. [Интерфейс](#Interface)
 2. [Инкапсуляция Наследование, Полиморфизм](#IncInhPol)
 3. [Перегрузка и переопределение](#OveridingOverloading)
-4. [Абстрактный метод](#Abstract)
-5. [Ключевое слово Virtual](#Virtual)
+4. [Ключевое слово abstract](#Abstract)
+5. [Ключевое слово virtual](#Virtual)
 5. [Рекурсия](#Recursion)
 
 
@@ -98,27 +98,27 @@
 
 ```C#
 public static int Plus(int a, int b)
-    {
-        return a + b;
-    }
-    public static string Plus(string a, string b)
-    {
-        return a + b;
-    }
+{
+	return a + b;
+}
+public static string Plus(string a, string b)
+{
+	return a + b;
+}
 
-    static void Main(String[] args)
-    {
-        Console.WriteLine(Plus(3, 7));
-        Console.WriteLine(Plus("3", "7"));
-        Console.ReadLine();
-    }
+static void Main(String[] args)
+{
+	Console.WriteLine(Plus(3, 7));
+	Console.WriteLine(Plus("3", "7"));
+	Console.ReadLine();
+}
 ```
 
 ***Переопределение*** (Overiding) - определение метода который определен в родительском классе. Метод имеет ту же  сигнатуру.
 
 ---
 
-###<a name='Abstract'>Абстрактный метод</a>
+###<a name='Abstract'>Ключевое слово abstract</a>
 
 ===
 
@@ -127,7 +127,7 @@ public static int Plus(int a, int b)
 
 ---
 
-###<a name='Virtual'> Ключевое слово Virtual </a>
+###<a name='Virtual'> Ключевое слово virtual </a>
 
 ===
 
@@ -162,7 +162,7 @@ public class Circle : Shape
 	{
 		return 3.14 * this.R * this.R;
 	}
-	}
+}
 ```
 
 --- 
