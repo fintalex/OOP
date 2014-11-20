@@ -5,6 +5,7 @@
 5. [Ключевое слово virtual](#Virtual)
 5. [Рекурсия](#Recursion)
 6. [Конструкция Using](#Using)
+7. [Кончтрукторы и дуструкторы](#ConstDest)
 
 
 ###<a name='Interface'>Интерфейс</a>
@@ -256,4 +257,5 @@ using(Font font1 = new Font("Arial", 10),
 }
 ```
 
+###<a name='ConstDest'> Конструкторы и деструкторы </a>
 
