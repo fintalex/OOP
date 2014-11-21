@@ -5,11 +5,11 @@
 3. [Перегрузка и переопределение](#OveridingOverloading)
 4. [Ключевое слово abstract](#Abstract)
 5. [Ключевое слово virtual](#Virtual)
-5. [Рекурсия](#Recursion)
-6. [Конструкция Using](#Using)
-7. [Кончтрукторы и дуструкторы](#ConstDest)
-8. [Интересные вопросы](#Interesting)
-8.1 [Что нужно чтобы класс работал с foreach](#ForeachForClass)
+6. [Рекурсия](#Recursion)
+7. [Конструкция Using](#Using)
+8. [Кончтрукторы и дуструкторы](#ConstDest)
+9. [Интересные вопросы](#Interesting)
+	9.1 [Что нужно чтобы класс работал с foreach](#ForeachForClass)
 
 
 ###<a name='Interface'>Интерфейс</a>
