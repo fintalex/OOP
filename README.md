@@ -8,8 +8,9 @@
 6. [Рекурсия](#Recursion)
 7. [Конструкция Using](#Using)
 8. [Кончтрукторы и дуструкторы](#ConstDest)
-9. [Интересные вопросы](#Interesting)
-- [Что нужно чтобы класс работал с foreach](#ForeachForClass)
+
+   [Интересные вопросы](#Interesting)
+1. [Что нужно чтобы класс работал с foreach](#ForeachForClass)
 
 
 ###<a name='Interface'>Интерфейс</a>
@@ -301,9 +302,30 @@ using(Font font1 = new Font("Arial", 10),
 
 ###<a name='ForeachForClass'> Что нужно чтобы класс работал с foreach </a>
 	
-	
+Один из вопросов на собеседованиях. И ответ на него - "Необходимо реализовать IEnumerable" - правильный но не полный. 
+Для того чтобы наш класс работал с foreach нужно чтобы он имел метод GetEnumerator, который будет возвращать объект у которого есть метод MoveNext и свойство Current.
 
+```C#
+public class Container
+{
+    public Enumerator GetEnumerator()
+    {
+        return new Enumerator();
+    }
+}
+public class Enumerator
+{
+    public bool MoveNext()
+    {
+        return false;
+    }
 
+    public object Current
+    {
+        get { return null; }
+    }
+}
+```
 
 
 
