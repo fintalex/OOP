@@ -9,7 +9,7 @@
 7. [Конструкция Using](#Using)
 8. [Кончтрукторы и дуструкторы](#ConstDest)
 9. [Интересные вопросы](#Interesting)
-	9.1 [Что нужно чтобы класс работал с foreach](#ForeachForClass)
+- [Что нужно чтобы класс работал с foreach](#ForeachForClass)
 
 
 ###<a name='Interface'>Интерфейс</a>
@@ -297,7 +297,9 @@ using(Font font1 = new Font("Arial", 10),
 
 ###<a name='Interesting'> Интересные вопросы </a>
 
-	###<a name='ForeachForClass'> Что нужно чтобы класс работал с foreach </a>
+=== 
+
+###<a name='ForeachForClass'> Что нужно чтобы класс работал с foreach </a>
 	
 	
 
