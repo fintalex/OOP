@@ -15,8 +15,6 @@
 
 ##<a name='Pattern'>Паттерны</a>
 
----
-
 1. [Singleton](#Singleton)
 
 ---
@@ -321,7 +319,50 @@ using(Font font1 = new Font("Arial", 10),
 
 ###<a name='Singleton'>Singleton</a>
 
+При первом обращении к типу вызовется статик конструктор (который вызывается только один раз за приложение), который как раз и создаст новый и единственный экземплят класса. И чтобы получить этот экземпляр мы будем обращаться к свойству Instance.
 
+```
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Singleton singleton = Singleton.Instance;
+
+            singleton.Count = 111;
+
+            TestMethod();
+
+            Console.ReadLine();
+        }
+        static void TestMethod()
+        {
+            Singleton singleton = Singleton.Instance;
+
+            Console.WriteLine(singleton.Count);
+        }
+    }
+
+    public class Singleton
+    {
+        private static Singleton _singleton;
+        static Singleton()
+        {
+            _singleton = new Singleton(); // внутри ничего не мещает создать экземпляр
+        }
+        // запрещает создание экземпляра извне
+        private Singleton()
+        {
+
+        }
+        public static Singleton Instance
+        {
+            get { return _singleton; }
+        }
+        public int Count { get; set; }
+    }
+```
+
+В Main обращаемся к экземпляру класса через указанное свойство Instanse. И устанавливает значение свойства Count = 111. Далее работаем с совершенно другим методом, который может вызываться в совершенно другом месте.  Там опять же обращаемся к свойству Instance которое возвращает нам тот же экземпляр класса. В итоге мы получим значение Count = 111, которое установили изначально.
 
 ---
 
