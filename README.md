@@ -13,6 +13,14 @@
 
 ---
 
+##<a name='Pattern'>Паттерны</a>
+
+---
+
+1. [Singleton](#Singleton)
+
+---
+
 ##[Интересные вопросы](#Interesting)
 
 1. [Что нужно чтобы класс работал с foreach](#ForeachForClass)
@@ -308,6 +316,15 @@ using(Font font1 = new Font("Arial", 10),
 	//код деструктора
 }
 ```
+
+===
+
+###<a name='Singleton'>Singleton</a>
+
+
+
+---
+
 
 ###<a name='Interesting'> Интересные вопросы </a>
 
