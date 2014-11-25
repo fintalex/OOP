@@ -423,6 +423,58 @@ DetectType<float>(); // обязательно указываем тип
 - Повторное использование кода. Об этом тоже слегка упомянуто. Обобщенный класс может быть написан однажды, а на его основе можно содавать кучу разных экземпляров, разных типов. Или в случае с методом - не плодить кучу переопределенных методов.
 
 
+####Обобщенные классы и интерфейсы
+
+```C#
+public interface IContainer< out T>
+{
+	//void SetItem(T item);
+	T GetItem();
+}
+
+public class Container<T> : IContainer<T>
+{
+	static void Main(string[] args)
+	{
+		IContainer<Shape> container = new Container<Circle>(new Circle());
+
+		//IContainer<Shape> list = GetList();
+
+		Console.ReadKey();
+	}
+
+	public static IContainer<Shape> GetList()
+	{
+		return new Container<Circle>(new Circle());
+	}
+
+	private T item;
+
+	public Container(T item)
+	{
+		this.item = item;
+	}
+
+	public T GetItem()
+	{
+		return item;
+	}
+}
+
+
+public class Shape
+{ 
+
+}
+
+public class Circle : Shape
+{ 
+
+}
+```
+
+Container - это класс который может быть контейнером для любого типа. И он реализует обобщенный интерфейс IContainer с одним метода T GetItem(). Если в интерфейсе указано ключевое слово out перед T, то это значит ковариантность. Это говорит компилятору что люблой IContainer<T> может принимть подобный тип или более конкретный (дочерний). Но если мы указали ключевое слово out то в интерфейсе мы сможем только вернуть этот тип, но не использовать в качестве передаваемых параметров.
+
 ===
 
 ---
