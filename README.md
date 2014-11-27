@@ -3,7 +3,8 @@
 ---
 
 1. [Интерфейс](#Interface)
-1. [Делегаты и события](#Delegat)
+1. [Делегаты](#Delegat)
+1. [Обобщенные делегаты](#SharedDelegate)
 1. [Инкапсуляция Наследование, Полиморфизм](#IncInhPol)
 1. [Перегрузка и переопределение](#OveridingOverloading)
 1. [Ключевое слово abstract](#Abstract)
@@ -223,6 +224,87 @@ class Program
 		Console.WriteLine(mess);
 	}
 
+}
+```
+
+----------------------------------------------------------------------------------------------------------------------------
+
+###<a name='SharedDelegate'>Обобщенныу делегаты</a>
+
+===
+
+Вот если у нас присутствует объявление делегатов у которых синатура одна и та же - зачем нам плодить их - можно воспользоваться обобщенным делегатом. 
+
+Есть два вида обобщенных делегатов: 
+
+***Action<T1, T2, T...>*** - делегат ссылающийся на метод без выходных параметров. Пимер Action<string, int> , Action<int, bool, int>.
+
+***Func<T1, T2, T... , T out>*** - делегат ссылающийся на метод с выходным параметром, тип которого определяется последним элементом последовательности. Пример Func<string, string, int>  ,  Func<string, int, bool>
+
+Можем попробовать заменить наш делегат обобщенным делегатом.
+
+```C#
+class Program
+{
+	static void Main(string[] args)
+	{
+		Car car = new Car();
+		Action<string> showMethod = Show;
+		car.Move(20, showMethod);
+	
+		Console.ReadLine();
+	}
+	static void Show (string mess)
+	{
+		Console.WriteLine(mess);
+	}
+
+}
+
+public class Car
+{
+	public void Move(int distance, Action<string> method)
+	{
+		for (int i = 0; i < distance; i++)
+		{
+			Thread.Sleep(1000);
+			method(string.Format( "Проехал {0} километров", i) );
+		}
+	}
+}
+```
+
+Плюс в том что нам уже не требуется объявление делегата ShowMessage, код становится короче. Минус только в том что мы потеряли имя нашего входного параметра (теперь он называется obj). Ну да и фиг с ним.
+
+Но если мы хотим сделать опционально получение сообщений от метода Move. Для этого нужно сделать следующее: создать свойство дополнительное Moving - которое будем задавать или нет (car.Moving = showMethod;). Тоесть это уже переход к событиям - хотим подписываемся, хотим нет.
+
+```C#
+class Program
+{
+	static void Main(string[] args)
+	{
+		Car car = new Car();
+		Action<string> showMethod = Show;
+		car.Moving = showMethod;
+		car.Move(20);
+	}
+	static void Show (string mess)
+	{
+		Console.WriteLine(mess);
+	}
+}
+public class Car
+{
+	public void Move(int distance)
+	{
+		for (int i = 0; i < distance; i++)
+		{
+			Thread.Sleep(1000);
+			if (Moving !=null)
+				Moving(string.Format("Проехал {0} километров", i));
+		}
+	}
+	public Action<string> Moving { get; set; }
 }
 ```
 
