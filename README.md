@@ -3,14 +3,15 @@
 ---
 
 1. [Интерфейс](#Interface)
-2. [Инкапсуляция Наследование, Полиморфизм](#IncInhPol)
-3. [Перегрузка и переопределение](#OveridingOverloading)
-4. [Ключевое слово abstract](#Abstract)
-5. [Ключевое слово virtual](#Virtual)
-6. [Рекурсия](#Recursion)
-7. [Конструкция Using](#Using)
-8. [Конструкторы и дуструкторы](#ConstDest)
-9. [Обобщения](#Generic)
+1. [Делегаты и события](#Delegat)
+1. [Инкапсуляция Наследование, Полиморфизм](#IncInhPol)
+1. [Перегрузка и переопределение](#OveridingOverloading)
+1. [Ключевое слово abstract](#Abstract)
+1. [Ключевое слово virtual](#Virtual)
+1. [Рекурсия](#Recursion)
+1. [Конструкция Using](#Using)
+1. [Конструкторы и дуструкторы](#ConstDest)
+1. [Обобщения](#Generic)
 
 ---
 
@@ -91,6 +92,73 @@
 - Если организовать класс с пересекающимися атрибутами, один общий класс - то это будет помойка. У трех каких то классов например Animal, Ship, House будет один общий класс ScrapHeap (), и в нем реализуем метод  GetProductinCost()  и  GetSpeed().  Но эти методы не нужны для всех подчиненных классов (Дома не имеют скорости, животные не имеют производительную стоимость).
 - Можно использовать множественное наследование, но не все языки это поддерживают.
 - А можно реализовать два интерфейса  ISpeedObject и IProductionObject. Соответственно в них будет методы   GetSpeed() и GetProductinCost()
+
+---
+
+###<a name='Delegat'>Делегаты и события</a>
+
+===
+
+***Сигнатура*** - тип и порядок его входных и выходных параметров. Например одинаковые сигнатуры для таких методов: public string Move(int step)  и public string Speed(int i).
+***Делегат*** - тип данных по ссылке. Делегат это такой тип который может хранить ссылку на метод который имеет такую же сигнатуру. В примере ниже делегат CountDelegate может хранить ссылку на методы GetCount и GetCountSymbolA, так как у них одинаковая сигнатура ( int (string) ). Так как делегат является классом мы можем создать переменную этого типа, тоесть переменные d1 и d2. Значениями этих переменных являются ссылки на методы, которые соответствуют сигнатуре. Переменную d3 нам не даст объявить компилятор.
+
+```C#
+class Program
+{
+	static void Main(string[] args)
+	{
+		StringHelper helper = new StringHelper();
+
+		CountDelegate d1 = helper.GetCount;
+		CountDelegate d2 = helper.GetCountSymbolA;
+		//CountDelegate d3 = helper.GetCountSymbol;
+	}
+}
+	
+public delegate int CountDelegate ( string message);
+
+public class StringHelper
+{
+	public int GetCount(string inputString)
+	{
+		return inputString.Length;
+	}
+	public int GetCountSymbolA(string input)
+	{
+		return input.Count(c => c == 'A');
+	}
+	public int GetCountSymbol(string intputString, char symbol)
+	{
+		return intputString.Count(c => c == symbol);
+	}
+}
+```
+
+Вот как они работают. Создадим вспомогательный метод TestMethod ( любой, не завися от сигнатуры), но у него будут первый входной параметр это ссылка на наш метод, тоесть делегат CountDelegate, а второй входная строка. Сделаем два вызова метода TestMethod: в первом передадим ссылку на метод d1 - GetCount, во втором d2 - GetCountSymbolA. 
+
+```C#
+static void Main(string[] args)
+{
+	StringHelper helper = new StringHelper();
+
+	CountDelegate d1 = helper.GetCount;
+	CountDelegate d2 = helper.GetCountSymbolA;
+	//CountDelegate d3 = helper.GetCountSymbol;
+
+	string testString = "МАФИЯ";
+
+	Console.WriteLine("Количество символов в строке:{0}",  TestMethod(d1, testString));
+	Console.WriteLine("Количество символов A в строке:{0}", TestMethod(d2, testString));
+
+	Console.ReadLine();
+}
+
+// вспомогательный метод
+static int TestMethod(CountDelegate method, string curString)
+{
+	return method(curString);
+}
+```
 
 ---
 
