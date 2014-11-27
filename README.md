@@ -162,6 +162,72 @@ static int TestMethod(CountDelegate method, string curString)
 
 ---
 
+Но вот если мы имеем такой класс и метода: 
+
+```C#
+class Program
+{
+	static void Main(string[] args)
+	{
+		Car car = new Car();
+		car.Move(20);
+	}
+}
+public class Car
+{
+	public void Move(int distance)
+	{
+		for (int i = 0; i < distance; i++)
+		{
+			Thread.Sleep(1000);
+			Console.WriteLine("Проехал {0} километров", i);
+		}
+	}
+}
+```
+
+Но предположим если этот класс Car находится на удаленном сервере, и мы хотим получать данные не на консоль а через интернет. Или мы делаем Window приложение. Тоесть нам нужно сделать метод Move таким образом чтобы можно было получать от него сообщение независимо от способа вывода. 
+Сначала объявим делегат void ShowMessage(string message),  добавим в метод Move новый параметр - ссылку на метод совпадающий с нашей сигнатурой метода. И заменим вывод на консоль на новый параметр - на ссылку. Таким образом мы избавились от только одного способа вывода.
+
+```C#
+public delegate void ShowMessage(string message);
+public class Car
+{
+	public void Move(int distance, ShowMessage method)
+	{
+		for (int i = 0; i < distance; i++)
+		{
+			Thread.Sleep(1000);
+			method(string.Format( "Проехал {0} километров", i) );
+		}
+	}
+}
+```
+
+Какже теперь воспользоваться этой лабудой. В нужном нам классе создадим вспомогательный метод который будет выводить как либо нам сообщение на экран, но с той же синатурой что и у нашего делегата. В Void Main создадим переменную нашего делегат -  ссылку на этот метод. И передедим ее вторым параметром в метод Move. Все работает как и прежде. 
+***В итоге, делегаты нам нужны для построения более высоких уровней абстракции***
+
+```C#
+class Program
+{
+	static void Main(string[] args)
+	{
+		Car car = new Car();
+		ShowMessage showMethod = Show;
+		car.Move(20, showMethod);
+	
+		Console.ReadLine();
+	}
+	static void Show (string mess)
+	{
+		Console.WriteLine(mess);
+	}
+
+}
+```
+
+----------------------------------------------------------------------------------------------------------------------------
+
 ###<a name='IncInhPol'>Инкапсуляция, Наследование и Полиморфизм</a>
 
 ===
