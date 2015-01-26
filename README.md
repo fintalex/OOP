@@ -14,7 +14,7 @@
 1. [Конструкторы и дуструкторы](#ConstDest)
 1. [Обобщения](#Generic)
 1. [Индексаторы](#Indexer)
-1. [Частичный класс](#PartialClass)
+1. [Разделяемые классы](#PartialClass)
 
 ---
 
@@ -785,6 +785,7 @@ public class Enumerator
 ```
 
 
+###[Оглавление](#OGL)
 ---
 
 ###<a name='Indexer'>Индексаторы</a>
@@ -837,6 +838,7 @@ class DayCollection
 }
 ```
 
+###[Оглавление](#OGL)
 ---
 
 ###<a name='PartialClass'>Разделяемые классы</a>
