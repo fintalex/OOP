@@ -763,6 +763,11 @@ public class Enumerator
 
 ###<a name='Indexer'>Индексаторы</a>
 
+- синтаксическое средство, позволяющее создать класс, структуру или интерфейс где доступ будет подобен массиву.
+- нужен для типов где главная цель - инкапсулировать коллекцию или массив.
+- можно образом получается более простой доступ к элементам массива экземпляра класса, и класс делается интитивно понятным.
+- Чтобы объявить индексатор для класса или структуры, используйте ключевое слово this
+
 ```
 class Sentence
 	{
@@ -785,5 +790,24 @@ class Sentence
 			Console.WriteLine(s[7]);       // exception
 		}
 	}
+```
+
+Или вот еще пример
+
+```
+// Using a string as an indexer value
+class DayCollection
+{
+    string[] days = { "Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat" };
+
+    // The get accessor returns an integer for a given string
+    public int this[string day]
+    {
+        get
+        {
+            return (GetDay(day));
+        }
+    }
+}
 ```
 
