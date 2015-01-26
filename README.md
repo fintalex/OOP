@@ -521,6 +521,31 @@ using(Font font1 = new Font("Arial", 10),
 - У конструкторов подчиненных классов мы можем приписать такую консрукцию public TransportShip() : base() {}. Что указывает на экземпляр родительского класса. 
 - То-есть если в родительском классе мы напишем один конструктор с параметрами, а в унаследованном - без параметров, то компилятор выдаст нам ошибку. Такую ошибку можно обойти прописам какое нибудь значение в base.
 
+```
+// вместо инициализации объекта мы можем использовать Bunny конструктор с опциональными параметрами
+	public class Bunny
+	{
+		public string Name;
+		public bool LikesCarrots;
+		public bool LikesHumans;
+
+		public Bunny(string name, bool likesCarrots = true, bool likesHumman = false) 
+		{
+			Name = name;
+			LikesCarrots = likesCarrots;
+		}
+	}
+
+	class Program
+	{
+		static void Main()
+		{
+			Bunny b = new Bunny(name: "Buny", likesHumman: true);
+			Bunny b2 = new Bunny(name: "Buny");
+		}
+	}
+```
+
 ***Деструкторы***
 
 - В C# можно определить метод - деструктор, который будет вызываться перед тем как объект будет уничтожен системой сборки мусора. 
