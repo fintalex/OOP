@@ -14,6 +14,7 @@
 1. [Конструкторы и дуструкторы](#ConstDest)
 1. [Обобщения](#Generic)
 1. [Индексаторы](#Indexer)
+1. [Частичный класс](#PartialClass)
 
 ---
 
@@ -836,3 +837,23 @@ class DayCollection
 }
 ```
 
+---
+
+###<a name='PartialClass'>Разделяемые классы</a>
+
+- имеем возможность разделять класс, метод или интерфейс между несколькими файлами
+- все части объединяются после компиляции
+- используется модификатор partial
+
+```
+partial class PaymentForm { public int X; }
+	partial class PaymentForm { public int Y; }
+
+	class Program
+	{
+		static void Main()
+		{
+			new PaymentForm {X = 5, Y = 99};
+		}
+	}
+```
