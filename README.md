@@ -548,6 +548,30 @@ using(Font font1 = new Font("Arial", 10),
 	}
 ```
 
+Статические поля вызываются до вызова статического конструктора
+
+```
+class Foo
+	{
+		static Foo()
+		{
+			X = 5;
+			Y = 6;
+		}
+		public static int X = Y;    // 0
+		public static int Y = 3;    // 3
+	}
+
+	class Program
+	{
+		static void Main()
+		{
+			Console.WriteLine(Foo.X);	// 0
+			Console.WriteLine(Foo.Y);	// 3
+		}
+	}
+```
+
 ***Деструкторы***
 
 - В C# можно определить метод - деструктор, который будет вызываться перед тем как объект будет уничтожен системой сборки мусора. 
