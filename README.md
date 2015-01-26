@@ -13,6 +13,7 @@
 1. [Конструкция Using](#Using)
 1. [Конструкторы и дуструкторы](#ConstDest)
 1. [Обобщения](#Generic)
+1. [Индексаторы](#Indexer)
 
 ---
 
@@ -758,7 +759,31 @@ public class Enumerator
 ```
 
 
+---
 
+###<a name='Indexer'>Индексаторы</a>
 
+```
+class Sentence
+	{
+		string[] words = "The quick brown fox".Split();
 
+		public string this[int wordNum]      // indexer
+		{
+			get { return words[wordNum]; }
+			set { words[wordNum] = value; }
+		}
+	}
+	class Program
+	{
+		static void Main()
+		{
+			Sentence s = new Sentence();
+			Console.WriteLine(s[3]);       // fox
+			s[3] = "kangaroo";
+			Console.WriteLine(s[3]);       // kangaroo
+			Console.WriteLine(s[7]);       // exception
+		}
+	}
+```
 
