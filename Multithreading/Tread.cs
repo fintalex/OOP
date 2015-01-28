@@ -48,23 +48,16 @@ namespace Multithreading
 
 
 		private void worker_ProcessChanged(int progress)
-		{
-			Action action = () => { 
-				progressBar1.Value = progress+1;
-				progressBar1.Value = progress;
-			};
-			this.InvokeEx(action);
+		{ 
+			progressBar1.Value = progress+1;
+			progressBar1.Value = progress;
 		}
 
 		private void worker_WorkCompleted(bool canceled)
 		{
-			Action action = () =>
-				{
-					string message = canceled ? "Процесс отменем" : "Процесс завершен!";
-					MessageBox.Show(message);
-					btn_Start.Enabled = true;
-				};
-			this.InvokeEx(action);
+			string message = canceled ? "Процесс отменем" : "Процесс завершен!";
+			MessageBox.Show(message);
+			btn_Start.Enabled = true;
 		}
 
 		
