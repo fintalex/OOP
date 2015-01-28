@@ -16,3 +16,6 @@ C:\Users\s.harchenko\Documents\Visual Studio 2012\Projects\polymorphism\OOP\poly
 C:\Users\s.harchenko\Documents\Visual Studio 2012\Projects\polymorphism\OOP\polymorphism\obj\Debug\polymorphism.csprojResolveAssemblyReference.cache
 C:\Users\s.harchenko\Documents\Visual Studio 2012\Projects\polymorphism\OOP\polymorphism\bin\Debug\polymorphism.exe
 C:\Users\s.harchenko\Documents\Visual Studio 2012\Projects\polymorphism\OOP\polymorphism\bin\Debug\polymorphism.pdb
+C:\Users\s.harchenko\Documents\GitHub\OOP\polymorphism\bin\Debug\polymorphism.exe.config
+C:\Users\s.harchenko\Documents\GitHub\OOP\polymorphism\obj\Debug\polymorphism.exe
+C:\Users\s.harchenko\Documents\GitHub\OOP\polymorphism\obj\Debug\polymorphism.pdb
