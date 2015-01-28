@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Multithreading
@@ -16,6 +16,11 @@ namespace Multithreading
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
+
+			var context = SynchronizationContext.Current;
+			var form = new Tread();
+			context = SynchronizationContext.Current;
+
 			Application.Run(new Tread());
 		}
 	}

@@ -14,12 +14,20 @@ namespace Multithreading
 	public partial class Tread : Form
 	{
 		private Worker _worker;
+		private SynchronizationContext _context;
 		public Tread()
 		{
 			InitializeComponent();
 
 			btn_Start.Click += btn_Start_Click;
 			btn_Cancel.Click += btn_Cancel_Click;
+
+			Load += Tread_Load;
+		}
+
+		private void Tread_Load(object sender, EventArgs e)
+		{
+			_context = SynchronizationContext.Current;
 		}
 
 		private void btn_Cancel_Click(object sender, EventArgs e)
@@ -33,7 +41,8 @@ namespace Multithreading
 			btn_Start.Enabled = false;
 
 			Thread thread = new Thread(_worker.Work);
-			thread.Start();
+			//thread.Start();
+			thread.Start(_context);
 		}
 
 
@@ -44,7 +53,7 @@ namespace Multithreading
 				progressBar1.Value = progress+1;
 				progressBar1.Value = progress;
 			};
-			Invoke(action);
+			this.InvokeEx(action);
 		}
 
 		private void worker_WorkCompleted(bool canceled)
@@ -55,7 +64,7 @@ namespace Multithreading
 					MessageBox.Show(message);
 					btn_Start.Enabled = true;
 				};
-			Invoke(action);
+			this.InvokeEx(action);
 		}
 
 		
