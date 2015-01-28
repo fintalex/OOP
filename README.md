@@ -27,6 +27,7 @@
 ##[Интересные вопросы](#Interesting)
 
 1. [Что нужно чтобы класс работал с foreach](#ForeachForClass)
+1. [Логирование](#logs)
 
 
 ###<a name='Interface'>Интерфейс</a>
@@ -783,6 +784,14 @@ public class Enumerator
     }
 }
 ```
+
+###[Оглавление](#logs)
+--- 
+
+###<a name='logs'>Логирование</a>
+---
+
+##### [Логирование в файл RollingFileAppender] (http://megadarja.blogspot.ru/2008/04/log4net.html)
 
 
 ###[Оглавление](#OGL)
