@@ -23,17 +23,16 @@ namespace Multithreading
 
 		private void btn_Cancel_Click(object sender, EventArgs e)
 		{
-			_worker = new Worker();
-			_worker.ProcessChanged += worker_ProcessChanged;
-			_worker.WorkCompleted += worker_WorkCompleted;
 			
-			btn_Start.Enabled = false;
-			_worker.Work();
 
 		}
 		private void btn_Start_Click(object sender, EventArgs e)
 		{
-			throw new NotImplementedException();
+			_worker = new Worker(worker_ProcessChanged, worker_WorkCompleted);
+			
+
+			btn_Start.Enabled = false;
+			_worker.Work();
 		}
 
 

@@ -1,0 +1,9 @@
+C:\Users\s.harchenko\Documents\GitHub\OOP\Multithreading\bin\Debug\Multithreading.exe.config
+C:\Users\s.harchenko\Documents\GitHub\OOP\Multithreading\bin\Debug\Multithreading.exe
+C:\Users\s.harchenko\Documents\GitHub\OOP\Multithreading\bin\Debug\Multithreading.pdb
+C:\Users\s.harchenko\Documents\GitHub\OOP\Multithreading\obj\Debug\Multithreading.csprojResolveAssemblyReference.cache
+C:\Users\s.harchenko\Documents\GitHub\OOP\Multithreading\obj\Debug\Multithreading.Tread.resources
+C:\Users\s.harchenko\Documents\GitHub\OOP\Multithreading\obj\Debug\Multithreading.Properties.Resources.resources
+C:\Users\s.harchenko\Documents\GitHub\OOP\Multithreading\obj\Debug\Multithreading.csproj.GenerateResource.Cache
+C:\Users\s.harchenko\Documents\GitHub\OOP\Multithreading\obj\Debug\Multithreading.exe
+C:\Users\s.harchenko\Documents\GitHub\OOP\Multithreading\obj\Debug\Multithreading.pdb

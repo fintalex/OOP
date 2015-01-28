@@ -14,6 +14,12 @@ namespace Multithreading
 		{
 			_cancelled = true;
 		}
+		public Worker(Action<int> processChanged, Action<bool> workCompleted)
+		{
+			ProcessChanged = processChanged;
+			WorkCompleted = workCompleted;
+		}
+
 		public void Work()
 		{
 			for (int i = 0; i < 100; i++)
