@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -23,30 +24,38 @@ namespace Multithreading
 
 		private void btn_Cancel_Click(object sender, EventArgs e)
 		{
-			
-
+			_worker.Cancel();
 		}
 		private void btn_Start_Click(object sender, EventArgs e)
 		{
 			_worker = new Worker(worker_ProcessChanged, worker_WorkCompleted);
 			
-
 			btn_Start.Enabled = false;
-			_worker.Work();
+
+			Thread thread = new Thread(_worker.Work);
+			thread.Start();
 		}
 
 
 
 		private void worker_ProcessChanged(int progress)
 		{
-			progressBar1.Value = progress;
+			Action action = () => { 
+				progressBar1.Value = progress+1;
+				progressBar1.Value = progress;
+			};
+			Invoke(action);
 		}
 
 		private void worker_WorkCompleted(bool canceled)
 		{
-			string message = canceled ? "Процесс отменем" : "Процесс завершен!";
-			MessageBox.Show(message);
-			btn_Start.Enabled = true;
+			Action action = () =>
+				{
+					string message = canceled ? "Процесс отменем" : "Процесс завершен!";
+					MessageBox.Show(message);
+					btn_Start.Enabled = true;
+				};
+			Invoke(action);
 		}
 
 		
