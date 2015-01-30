@@ -791,9 +791,9 @@ public class Enumerator
 ###<a name='logs'>Логирование</a>
 ---
 
- [Логирование в файл RollingFileAppender] (http://megadarja.blogspot.ru/2008/04/log4net.html)
- [Решение которое я искал по универсальному логгеру] (http://www.codeproject.com/Tips/381212/log-Net-logging-framework)
- [Разные насройки конфигов] (http://logging.apache.org/log4net/release/config-examples.html)
+1. [Логирование в файл RollingFileAppender] (http://megadarja.blogspot.ru/2008/04/log4net.html)
+1. [Решение которое я искал по универсальному логгеру] (http://www.codeproject.com/Tips/381212/log-Net-logging-framework)
+1. [Разные насройки конфигов] (http://logging.apache.org/log4net/release/config-examples.html)
 
 
 ###[Оглавление](#OGL)
