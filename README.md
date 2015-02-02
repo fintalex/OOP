@@ -795,6 +795,18 @@ public class Enumerator
 1. [Решение которое я искал по универсальному логгеру] (http://www.codeproject.com/Tips/381212/log-Net-logging-framework)
 1. [Разные насройки конфигов] (http://logging.apache.org/log4net/release/config-examples.html)
 
+Если описать такую ситуацию. Мы создаем универсальную библиотеку классов Infrastructure.Logging (Log4NetLibrary). Создаем там собственный config файл для регулирования мест записи в логи (база или файл). 
+
+И если у нас будет один интерфейс ILogService и два класса для его реализации: DBLogService и FileLogService. 
+
+В итоге в любом проекте мы настраиваем IoC так чтобы один интерфейс отвечал одной реализации. ОК. 
+
+```
+container.Register(Classes.FromAssemblyNamed("Infrastructure.Logging").Pick().WithService.DefaultInterfaces().LifestyleTransient());
+```
+
+Но возникает вопрос. А если мы в проекте хотим одновременно записывать логи и в файл и в базу???
+
 
 ###[Оглавление](#OGL)
 ---
