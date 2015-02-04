@@ -1,0 +1,9 @@
+C:\Users\s.harchenko\Downloads\Log4NetFrameworkSolution (1)\Log4NetFrameworkSolution\Log4NetFramework.BusinessLibOne\bin\Debug\log4net.config
+C:\Users\s.harchenko\Downloads\Log4NetFrameworkSolution (1)\Log4NetFrameworkSolution\Log4NetFramework.BusinessLibOne\bin\Debug\Log4NetFramework.BusinessLibOne.dll
+C:\Users\s.harchenko\Downloads\Log4NetFrameworkSolution (1)\Log4NetFrameworkSolution\Log4NetFramework.BusinessLibOne\bin\Debug\Log4NetFramework.BusinessLibOne.pdb
+C:\Users\s.harchenko\Downloads\Log4NetFrameworkSolution (1)\Log4NetFrameworkSolution\Log4NetFramework.BusinessLibOne\bin\Debug\Log4NetLibrary.dll
+C:\Users\s.harchenko\Downloads\Log4NetFrameworkSolution (1)\Log4NetFrameworkSolution\Log4NetFramework.BusinessLibOne\bin\Debug\log4net.dll
+C:\Users\s.harchenko\Downloads\Log4NetFrameworkSolution (1)\Log4NetFrameworkSolution\Log4NetFramework.BusinessLibOne\bin\Debug\Log4NetLibrary.pdb
+C:\Users\s.harchenko\Downloads\Log4NetFrameworkSolution (1)\Log4NetFrameworkSolution\Log4NetFramework.BusinessLibOne\obj\Debug\Log4NetFramework.BusinessLibOne.csprojResolveAssemblyReference.cache
+C:\Users\s.harchenko\Downloads\Log4NetFrameworkSolution (1)\Log4NetFrameworkSolution\Log4NetFramework.BusinessLibOne\obj\Debug\Log4NetFramework.BusinessLibOne.dll
+C:\Users\s.harchenko\Downloads\Log4NetFrameworkSolution (1)\Log4NetFrameworkSolution\Log4NetFramework.BusinessLibOne\obj\Debug\Log4NetFramework.BusinessLibOne.pdb
