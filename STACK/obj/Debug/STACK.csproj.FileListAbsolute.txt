@@ -1,0 +1,6 @@
+C:\Users\s.harchenko\Documents\GitHub\OOP\STACK\obj\Debug\STACK.csprojResolveAssemblyReference.cache
+C:\Users\s.harchenko\Documents\GitHub\OOP\STACK\bin\Debug\STACK.exe.config
+C:\Users\s.harchenko\Documents\GitHub\OOP\STACK\bin\Debug\STACK.exe
+C:\Users\s.harchenko\Documents\GitHub\OOP\STACK\bin\Debug\STACK.pdb
+C:\Users\s.harchenko\Documents\GitHub\OOP\STACK\obj\Debug\STACK.exe
+C:\Users\s.harchenko\Documents\GitHub\OOP\STACK\obj\Debug\STACK.pdb

@@ -9,7 +9,7 @@ namespace STACK
 	public class CStack<T>
 	{
 		private T[] _array; // массив для хранения данных типа Т
-		private const int defaultCapacity; // по умолчанию вместимость, потом если что можно будет расширить
+		private const int defaultCapacity = 10; // по умолчанию вместимость, потом если что можно будет расширить
 		private int size; // размер
 
 		public CStack() // конструктор
@@ -51,6 +51,15 @@ namespace STACK
 				this._array = newArray; // просто создаем новый массив с двойным размером
 			}
 			this._array[this.size++] = newElement; // и вставляем сам элемент
+		}
+
+		public T Peek()
+		{
+			if (this.size == 0)
+			{
+				throw new InvalidOperationException();
+			}
+			return this._array[this.size - 1];
 		}
 
 	}
