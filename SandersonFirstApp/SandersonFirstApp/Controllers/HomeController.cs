@@ -30,7 +30,7 @@ namespace SandersonFirstApp.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				// todo: send by email
+				guestResponse.Submit();
 				return View("Thanks", guestResponse);
 			}
 			else
