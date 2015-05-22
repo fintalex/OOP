@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+		<h1>New Year's Party</h1>
+		<p>
+			@ViewData["greeting"] , we are going to have an exciting patry.
+			(to do: sell it better. Add pictures or something)
+		</p>
+		@Html.ActionLink("RSVP Now", "RSVPForm")
+    </div>
+</body>
+</html>
