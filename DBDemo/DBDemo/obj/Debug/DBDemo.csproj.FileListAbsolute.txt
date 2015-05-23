@@ -5,3 +5,7 @@ C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\bin\Debug\DBDemo.exe
 C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\bin\Debug\DBDemo.pdb
 C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\obj\Debug\DBDemo.exe
 C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\obj\Debug\DBDemo.pdb
+C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\bin\Debug\EntityFramework.dll
+C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\bin\Debug\EntityFramework.xml
+C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\bin\Debug\EntityFramework.SqlServer.xml

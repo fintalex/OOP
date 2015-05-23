@@ -25,9 +25,9 @@ namespace DBDemo
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Customer> t_customer { get; set; }
-        public virtual DbSet<Order> t_order { get; set; }
-        public virtual DbSet<OrderProduct> t_order_product { get; set; }
-        public virtual DbSet<Product> t_product { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<OrderProduct> OrderProducts { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
     }
 }
