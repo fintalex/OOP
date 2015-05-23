@@ -1,1 +1,7 @@
 c:\users\алексей\documents\visual studio 2013\Projects\DBDemo\DBDemo\bin\Debug\DBDemo.exe.config
+C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\bin\Debug\DBDemo.exe.config
+C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\obj\Debug\DBDemo.csprojResolveAssemblyReference.cache
+C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\bin\Debug\DBDemo.exe
+C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\bin\Debug\DBDemo.pdb
+C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\obj\Debug\DBDemo.exe
+C:\Users\Алексей\Documents\GitHub\OOP\DBDemo\DBDemo\obj\Debug\DBDemo.pdb
