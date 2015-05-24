@@ -13,6 +13,7 @@ namespace DBDemo
     {
         static void Main(string[] args)
         {
+            #region Низкоуровневая работа с базой
             // это все низкоуровневая работа с базой данных
             // Минусы:
             // 1- в С# коде используем sql запрос
@@ -33,14 +34,17 @@ namespace DBDemo
             //    {
             //        Console.WriteLine("Идентификатор: {0}\Имя:{1}", reader.GetInt32(0), reader.GetString(1));
             //    }
-            //}
+            //} 
+            #endregion
 
+            #region Выделили в статический метод
             // ================  вывод с помощью статического метода и класса прокси ===================================
             //var customers = GetCustomers();
             //foreach (var cust in customers)
             //{
             //    Console.WriteLine("Идентификатор: {0}\tИмя:{1}", cust.Id, cust.Name);
-            //}
+            //} 
+            #endregion
 
 
             // ================  вывод с помощью EF ===================================

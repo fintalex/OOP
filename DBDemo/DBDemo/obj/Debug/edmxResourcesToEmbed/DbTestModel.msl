@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="TestDbModelStoreContainer" CdmEntityContainer="TestDbContext">
-    <EntitySetMapping Name="t_customer">
+    <EntitySetMapping Name="Customers">
       <EntityTypeMapping TypeName="TestDbModel.Customer">
         <MappingFragment StoreEntitySet="t_customer">
           <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
@@ -9,7 +9,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="t_order">
+    <EntitySetMapping Name="Orders">
       <EntityTypeMapping TypeName="TestDbModel.Order">
         <MappingFragment StoreEntitySet="t_order">
           <ScalarProperty Name="OrderId" ColumnName="OrderId" />
@@ -27,7 +27,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="t_product">
+    <EntitySetMapping Name="Products">
       <EntityTypeMapping TypeName="TestDbModel.Product">
         <MappingFragment StoreEntitySet="t_product">
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
