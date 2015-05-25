@@ -77,7 +77,7 @@
   <EntityContainer Name="TestDbContext" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Customers" EntityType="TestDbModel.Customer" />
     <EntitySet Name="Orders" EntityType="TestDbModel.Order" />
-    <EntitySet Name="t_order_product" EntityType="TestDbModel.OrderProduct" />
+    <EntitySet Name="OrderProducts" EntityType="TestDbModel.OrderProduct" />
     <EntitySet Name="Products" EntityType="TestDbModel.Product" />
     <AssociationSet Name="FK_t_order_t_customer" Association="Self.FK_t_order_t_customer">
       <End Role="t_customer" EntitySet="Customers" />
@@ -85,11 +85,11 @@
     </AssociationSet>
     <AssociationSet Name="FK_t_order_product_t_order" Association="Self.FK_t_order_product_t_order">
       <End Role="t_order" EntitySet="Orders" />
-      <End Role="t_order_product" EntitySet="t_order_product" />
+      <End Role="t_order_product" EntitySet="OrderProducts" />
     </AssociationSet>
     <AssociationSet Name="FK_t_order_product_t_product" Association="Self.FK_t_order_product_t_product">
       <End Role="t_product" EntitySet="Products" />
-      <End Role="t_order_product" EntitySet="t_order_product" />
+      <End Role="t_order_product" EntitySet="OrderProducts" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

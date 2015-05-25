@@ -18,7 +18,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="t_order_product">
+    <EntitySetMapping Name="OrderProducts">
       <EntityTypeMapping TypeName="TestDbModel.OrderProduct">
         <MappingFragment StoreEntitySet="t_order_product">
           <ScalarProperty Name="OrderId" ColumnName="OrderId" />

@@ -1,0 +1,5 @@
+c:\users\алексей\documents\visual studio 2013\Projects\SportStore\DomainModel\bin\Debug\DomainModel.dll
+c:\users\алексей\documents\visual studio 2013\Projects\SportStore\DomainModel\bin\Debug\DomainModel.pdb
+c:\users\алексей\documents\visual studio 2013\Projects\SportStore\DomainModel\obj\Debug\DomainModel.csprojResolveAssemblyReference.cache
+c:\users\алексей\documents\visual studio 2013\Projects\SportStore\DomainModel\obj\Debug\DomainModel.dll
+c:\users\алексей\documents\visual studio 2013\Projects\SportStore\DomainModel\obj\Debug\DomainModel.pdb

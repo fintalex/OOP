@@ -1,0 +1,5 @@
+c:\users\алексей\documents\visual studio 2013\Projects\SportStore\Tests\bin\Debug\Tests.dll
+c:\users\алексей\documents\visual studio 2013\Projects\SportStore\Tests\bin\Debug\Tests.pdb
+c:\users\алексей\documents\visual studio 2013\Projects\SportStore\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+c:\users\алексей\documents\visual studio 2013\Projects\SportStore\Tests\obj\Debug\Tests.dll
+c:\users\алексей\documents\visual studio 2013\Projects\SportStore\Tests\obj\Debug\Tests.pdb

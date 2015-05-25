@@ -61,7 +61,9 @@ namespace DBDemo
         {
             var context = new TestDbContext();
 
-            var customers = context.Customers.ToList();
+            IQueryable<Customer> query = context.Customers;
+
+            List<Customer> customers = query.ToList();
 
             return customers;
         }
