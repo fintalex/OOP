@@ -20,3 +20,27 @@ c:\users\алексей\documents\visual studio 2013\Projects\SportStore\WebUI\b
 c:\users\алексей\documents\visual studio 2013\Projects\SportStore\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
 c:\users\алексей\documents\visual studio 2013\Projects\SportStore\WebUI\obj\Debug\WebUI.dll
 c:\users\алексей\documents\visual studio 2013\Projects\SportStore\WebUI\obj\Debug\WebUI.pdb
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\WebUI.dll.config
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\WebUI.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\WebUI.pdb
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\DomainModel.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\Newtonsoft.Json.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.Helpers.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.Mvc.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.Razor.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.WebPages.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\DomainModel.pdb
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\Newtonsoft.Json.xml
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.Helpers.xml
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.Mvc.xml
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.Razor.xml
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.WebPages.xml
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\obj\Debug\WebUI.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\obj\Debug\WebUI.pdb

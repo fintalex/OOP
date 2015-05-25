@@ -3,3 +3,8 @@ c:\users\алексей\documents\visual studio 2013\Projects\SportStore\Tests\b
 c:\users\алексей\documents\visual studio 2013\Projects\SportStore\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
 c:\users\алексей\documents\visual studio 2013\Projects\SportStore\Tests\obj\Debug\Tests.dll
 c:\users\алексей\documents\visual studio 2013\Projects\SportStore\Tests\obj\Debug\Tests.pdb
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\Tests\bin\Debug\Tests.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\Tests\bin\Debug\Tests.pdb
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\Tests\obj\Debug\Tests.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\Tests\obj\Debug\Tests.pdb
