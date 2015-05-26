@@ -5,6 +5,5 @@ c:\users\алексей\documents\visual studio 2013\Projects\SportStore\DomainM
 c:\users\алексей\documents\visual studio 2013\Projects\SportStore\DomainModel\obj\Debug\DomainModel.pdb
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\DomainModel\bin\Debug\DomainModel.dll
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\DomainModel\bin\Debug\DomainModel.pdb
-C:\Users\Алексей\Documents\GitHub\OOP\SportStore\DomainModel\obj\Debug\DomainModel.csprojResolveAssemblyReference.cache
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\DomainModel\obj\Debug\DomainModel.dll
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\DomainModel\obj\Debug\DomainModel.pdb

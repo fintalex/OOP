@@ -23,6 +23,8 @@ c:\users\алексей\documents\visual studio 2013\Projects\SportStore\WebUI\o
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\WebUI.dll.config
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\WebUI.dll
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\WebUI.pdb
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\Castle.Core.dll
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\Castle.Windsor.dll
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\DomainModel.dll
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
@@ -34,6 +36,8 @@ C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.Web
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.WebPages.dll
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.WebPages.Razor.dll
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\DomainModel.pdb
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\Castle.Core.xml
+C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\Castle.Windsor.xml
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\Newtonsoft.Json.xml
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.Helpers.xml
 C:\Users\Алексей\Documents\GitHub\OOP\SportStore\WebUI\bin\System.Web.Mvc.xml

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DomainModel.Concrete
 {
-    public class FakeProductsRepository : IProductsRepository
+    public class FakeProductsRepository //: IProductsRepository
     {
         // фиктивный жестко закодированный список товаров
         private static IQueryable<Product> fakeProducts = new List<Product>() {

@@ -12,10 +12,12 @@ namespace WebUI.Controllers
     {
         private IProductsRepository productsRepository;
 
-        public ProductsController()
+        public ProductsController(IProductsRepository productRepository)
         {
             // это временно пока не будет готова инфраструктура
-            productsRepository = new FakeProductsRepository();
+            //string connString = @"Data Source=ALEX-PC\SQLEXPRESS;Initial Catalog=SportStore;Integrated Security=True";
+            //productsRepository = new SqlProductRepository(connString);
+            this.productsRepository = productRepository;
         }
 
         public ViewResult List()
