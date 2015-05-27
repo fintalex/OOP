@@ -16,3 +16,5 @@
         <h4>@product.Price.ToString("c")</h4>
     </div>
 }
+
+@Html.PageLinks(2, 3, i => Url.Action("List", new { page= i}))

@@ -10,6 +10,7 @@ namespace WebUI.Controllers
 {
     public class ProductsController : Controller
     {
+        public int PageSize = 4; // позже изменим
         private IProductsRepository productsRepository;
 
         public ProductsController(IProductsRepository productRepository)
@@ -20,9 +21,12 @@ namespace WebUI.Controllers
             this.productsRepository = productRepository;
         }
 
-        public ViewResult List()
+        public ViewResult List(int page)
         {
-            return View(productsRepository.Products.ToList());
+            return View(productsRepository.Products
+                                          .Skip((page-1) * PageSize)
+                                          .Take(PageSize)
+                                          .ToList());
         }
     }
 }

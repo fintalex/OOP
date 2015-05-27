@@ -14,9 +14,15 @@ namespace WebUI
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Products", action = "List", id = UrlParameter.Optional }
+                null, // назначать имя этому элементу маршрута не обязательно
+                "",     // соответствует корневому URL, те `/
+                new  { controller = "Products", action = "List", page = 1 } // настройки по умолчанию
+            );
+            routes.MapRoute(
+                null,   // назначать имя этому элементу маршрута не обязательно
+                "Page{page}", // шаблон URL, например `/Page683
+                new { controller = "Products", action = "List" }, // настройки по умолчанию
+                new { page = @"\d+" }
             );
         }
     }
