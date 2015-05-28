@@ -1,4 +1,7 @@
-﻿@using System.Collections
+﻿
+@using System.Collections
+@using WebUI.HtmlHelpers
+
 @model IEnumerable<DomainModel.Entities.Product>
 
 @{
@@ -17,4 +20,6 @@
     </div>
 }
 
-@Html.PageLinks(2, 3, i => Url.Action("List", new { page= i}))
+Page: 
+@Html.PageLinks((int)ViewBag.CurrentPage, (int)ViewBag.TotalPages, x => Url.Action("List", new { page = x }))
+
