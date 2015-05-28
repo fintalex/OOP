@@ -21,15 +21,19 @@ namespace WebUI.Controllers
             this.productsRepository = productRepository;
         }
 
-        public ViewResult List(int page)
+        public ViewResult List(string category, int page)
         {
+            var productsInCategory = (category == null) ? productsRepository.Products : productsRepository.Products.Where(x => x.Category == category);
+
             int numProducts = productsRepository.Products.Count();
             ViewBag.TotalPages = (int)Math.Ceiling((double)numProducts / PageSize);
             ViewBag.CurrentPage = page;
-            return View(productsRepository.Products
-                                          .Skip((page-1) * PageSize)
-                                          .Take(PageSize)
-                                          .ToList());
+            ViewBag.CurrentCategory = category; // для использования при генерации ссылок на страницы
+
+            return View(productsInCategory
+                        .Skip((page-1) * PageSize)
+                        .Take(PageSize)
+                        .ToList());
         }
     }
 }
