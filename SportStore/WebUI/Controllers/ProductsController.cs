@@ -10,7 +10,7 @@ namespace WebUI.Controllers
 {
     public class ProductsController : Controller
     {
-        public int PageSize = 4; // позже изменим
+        public int PageSize = 1; // позже изменим
         private IProductsRepository productsRepository;
 
         public ProductsController(IProductsRepository productRepository)
@@ -25,7 +25,7 @@ namespace WebUI.Controllers
         {
             var productsInCategory = (category == null) ? productsRepository.Products : productsRepository.Products.Where(x => x.Category == category);
 
-            int numProducts = productsRepository.Products.Count();
+            int numProducts = productsInCategory.Count();
             ViewBag.TotalPages = (int)Math.Ceiling((double)numProducts / PageSize);
             ViewBag.CurrentPage = page;
             ViewBag.CurrentCategory = category; // для использования при генерации ссылок на страницы
