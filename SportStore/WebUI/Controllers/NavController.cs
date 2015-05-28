@@ -15,16 +15,16 @@ namespace WebUI.Controllers
         {
             this.productsRepository = productsRepository;
         }
-        public ViewResult Menu()
+        public ViewResult Menu(string highlightCategory)
         {
             // Поместить в начало ссылку Home
             List<NavLink> navLinks = new List<NavLink>();
-            navLinks.Add(new CategoryLink(null));
+            navLinks.Add(new CategoryLink(null) { IsSelected = (highlightCategory == null) });
             //добавить ссылку для каждой отличающейся категории
             var categories = productsRepository.Products.Select(x => x.Category);
             foreach (string category in categories.Distinct().OrderBy(x=>x))
             {
-                navLinks.Add(new CategoryLink(category));
+                navLinks.Add(new CategoryLink(category) { IsSelected = (category == highlightCategory) });
             }
             return View(navLinks);
         }
@@ -34,6 +34,7 @@ namespace WebUI.Controllers
     {
         public string Text { get; set; }
         public RouteValueDictionary RouteValues { get; set; }
+        public bool IsSelected { get; set; }
     }
 
     public class CategoryLink : NavLink // специфическая ссылка на категорию товаров
