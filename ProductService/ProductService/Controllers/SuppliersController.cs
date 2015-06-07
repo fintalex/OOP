@@ -30,7 +30,7 @@ namespace ProductService.Controllers
             return db.Suppliers;
         }
 
-      
+
         [EnableQuery]
         public SingleResult<Supplier> Get([FromODataUri] int key)
         {
@@ -38,7 +38,7 @@ namespace ProductService.Controllers
             return SingleResult.Create(result);
         }
 
-       
+
         public async Task<IHttpActionResult> Post(Supplier supplier)
         {
             if (!ModelState.IsValid)
@@ -46,7 +46,7 @@ namespace ProductService.Controllers
                 return BadRequest(ModelState);
             }
             db.Suppliers.Add(supplier);
-            await db.SaveChangesAsync(); 
+            await db.SaveChangesAsync();
             return Created(supplier);
         }
 
@@ -58,7 +58,7 @@ namespace ProductService.Controllers
             {
                 return BadRequest(ModelState);
             }
-            var entity = await db.Suppliers.FindAsync(key); 
+            var entity = await db.Suppliers.FindAsync(key);
             if (entity == null)
             {
                 return NotFound();
@@ -130,6 +130,35 @@ namespace ProductService.Controllers
         public IQueryable<Product> GetProducts([FromODataUri] int key)
         {
             return db.Suppliers.Where(m => m.Id.Equals(key)).SelectMany(m => m.Products);
+        }
+
+        public async Task<IHttpActionResult> DeleteRef([FromODataUri] int key, [FromODataUri] string relatedKey, string navigationProperty)
+        {
+            var supplier = await db.Suppliers.SingleOrDefaultAsync(p => p.Id == key);
+            if (supplier == null)
+            {
+                return StatusCode(HttpStatusCode.NotFound);
+            }
+
+            switch (navigationProperty)
+            {
+                case "Products":
+                    var productId = Convert.ToInt32(relatedKey);
+                    var product = await db.Products.SingleOrDefaultAsync(p => p.Id == productId);
+
+                    if (product == null)
+                    {
+                        return NotFound();
+                    }
+                    product.Supplier = null;
+                    break;
+                default:
+                    return StatusCode(HttpStatusCode.NotImplemented);
+
+            }
+            await db.SaveChangesAsync();
+
+            return StatusCode(HttpStatusCode.NoContent);
         }
     }
 }
