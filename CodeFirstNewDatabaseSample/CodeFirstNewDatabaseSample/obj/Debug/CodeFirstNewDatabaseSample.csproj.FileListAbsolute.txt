@@ -1,0 +1,15 @@
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\bin\Debug\CodeFirstNewDatabaseSample.exe.config
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\bin\Debug\CodeFirstNewDatabaseSample.exe
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\bin\Debug\CodeFirstNewDatabaseSample.pdb
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\bin\Debug\EntityFramework.dll
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\bin\Debug\EntityFramework.xml
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.csprojResolveAssemblyReference.cache
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.exe
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.pdb
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.Migrations.InitialCreate.resources
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.csproj.GenerateResource.Cache
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.Migrations.AddMyUrl.resources
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.Migrations.AddUserEntity.resources
+C:\Users\Алексей\Documents\GitHub\Angular-tests\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.Migrations.AddUserEntity1.resources
