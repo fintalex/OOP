@@ -50,3 +50,4 @@ C:\Users\Алексей\Documents\GitHub\OOP\ProductService\ProductService\bin\z
 C:\Users\Алексей\Documents\GitHub\OOP\ProductService\ProductService\bin\zh-Hant\Microsoft.Spatial.resources.dll
 C:\Users\Алексей\Documents\GitHub\OOP\ProductService\ProductService\obj\Debug\ProductService.dll
 C:\Users\Алексей\Documents\GitHub\OOP\ProductService\ProductService\obj\Debug\ProductService.pdb
+C:\Users\Алексей\Documents\GitHub\OOP\ProductService\ProductService\obj\Debug\ProductService.csprojResolveAssemblyReference.cache
